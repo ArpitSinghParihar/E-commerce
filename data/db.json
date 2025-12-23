@@ -1,0 +1,57 @@
+{
+  "products": [
+    {
+      "id": "1765877319617",
+      "userId": "1",
+      "name": "Kashmiri shawl",
+      "price": "2600",
+      "description": "winter product",
+      "reviews": []
+    },
+    {
+      "id": "1765970044803",
+      "userId": "1765390694733",
+      "name": "Sherwani",
+      "price": "15000",
+      "description": "Wedding outfit",
+      "reviews": [
+        {
+          "id": "1766047392419",
+          "userId": "1",
+          "review": "nice product"
+        }
+      ]
+    },
+    {
+      "id": "1766041663279",
+      "userId": "1765390694733",
+      "name": "Jodhpuri suit",
+      "price": "8000",
+      "description": "Wedding outfit",
+      "reviews": []
+    },
+    {
+      "id": "1766057328270",
+      "userId": "1765390694733",
+      "name": "Achkan",
+      "price": "12000",
+      "description": "Best outfit for wedding in rajputana culture",
+      "reviews": []
+    },
+    {
+      "id": "1766058541400",
+      "userId": "1765390694733",
+      "name": "Horse tail sword",
+      "price": "7500",
+      "description": "Traditional symbol of sword knows for their courage and stylish look",
+      "reviews": []
+    },
+    {
+      "id": "1766125104881",
+      "userId": "1",
+      "name": "Shirts",
+      "price": "800",
+      "description": "Wearable at any place, anytime."
+    }
+  ]
+}

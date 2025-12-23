@@ -1,5 +1,5 @@
 import { createContext, useEffect, useRef, useState } from "react";
-
+import data from '../data/db.json'
 export const AuthContext = createContext();
 
 const AuthProvider = ({ children }) => {
@@ -9,15 +9,20 @@ const AuthProvider = ({ children }) => {
   const[user,setUser] = useState(() => {
     return JSON.parse(localStorage.getItem("user")) || null;
   });
-  const [allProducts, setAllProducts] = useState(()=>{
-    return JSON.parse(localStorage.getItem('products')) || []
-  });
+  const [allProducts, setAllProducts] = useState(data.products);
   const [query, setQuery] = useState("");
   const [value, setValue] = useState("");
   const [filterProduct, setFilterProduct] = useState([]);
   const[cart, setCart] = useState([]);
   const debounceRef = useRef(null);
    const cartKey = `Cart_${user?.id}`;
+
+  useEffect(()=>{
+    if(allProducts.length>0){
+      const data = JSON.parse(localStorage.getItem('products'))
+      setAllProducts(data || [])
+    }
+  },[])
 
   // All Users
   useEffect(() => {
