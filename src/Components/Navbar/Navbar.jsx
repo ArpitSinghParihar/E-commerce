@@ -32,7 +32,7 @@ const Navbar = () => {
         <Link to={"/"}>Home</Link>
         {!user ? (
           <button
-            className="cursor-pointer  bg-blue-500 px-1 rounded hover:bg-blue-600"
+            className="cursor-pointer  bg-blue-500 px-1 rounded hover:bg-blue-600 text-white"
             onClick={() => navigate("/login")}
           >
             Login
@@ -67,7 +67,7 @@ const Navbar = () => {
           <Link to={"/"}>Home</Link>
           {!user ? (
             <button
-              className="cursor-pointer  bg-blue-500 px-1 rounded hover:bg-blue-600"
+              className="cursor-pointer  bg-blue-500 px-1 rounded hover:bg-blue-600 text-white"
               onClick={() => navigate("/login")}
             >
               Login
