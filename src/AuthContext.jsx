@@ -1,5 +1,5 @@
 import { createContext, useEffect, useRef, useState } from "react";
-import data from '../data/db.json'
+import data from '../src/data/db.json'
 export const AuthContext = createContext();
 
 const AuthProvider = ({ children }) => {
